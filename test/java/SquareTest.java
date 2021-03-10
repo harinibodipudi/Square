@@ -41,5 +41,11 @@ public class SquareTest {
             Assert.assertEquals(  expectedMessage, e.getMessage() );
         }
     }
+    @Test
+    public void testPerimeterIsPositiveForPositiveValuedSide(){
+        Square newSquare = new Square(10);
+        int expectedPerimeter=40;
 
+        assertEquals(expectedPerimeter,newSquare.perimeter());
+    }
 }

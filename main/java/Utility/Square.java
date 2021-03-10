@@ -17,6 +17,9 @@ public class Square {
         }else{
             throw new IOException("Side cannot be Zero");
         }
+    }
 
-}
+    public int perimeter(){
+
+    }
 }
