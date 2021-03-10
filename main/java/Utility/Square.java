@@ -19,7 +19,13 @@ public class Square {
         }
     }
 
-    public int perimeter(){
-        return sideLength*4;
+    public int perimeter() throws IOException{
+        if(sideLength>0){
+            return sideLength*4;
+        }else if(sideLength<0){
+            throw new IOException("Side cannot be negative");
+        }else{
+            throw new IOException("Side cannot be zero");
+        }
     }
 }
