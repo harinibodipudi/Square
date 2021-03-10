@@ -20,6 +20,6 @@ public class Square {
     }
 
     public int perimeter(){
-
+        return sideLength*4;
     }
 }
