@@ -19,10 +19,24 @@ public class SquareTest {
         Square newSquare = new Square(-4);
 
         try {
-            assertEquals("Sides cannot be negative", newSquare.area());
+            assertEquals("Side cannot be negative", newSquare.area());
         }
         catch (Exception e) {
-            String expectedMessage = "Sides cannot be negative";
+            String expectedMessage = "Side cannot be negative";
+
+            Assert.assertEquals(  expectedMessage, e.getMessage() );
+        }
+    }
+
+    @Test
+    public void TestAreaThrowsExceptionForZeroValuedSide() throws IOException {
+        Square newSquare = new Square(0);
+
+        try {
+            assertEquals("Side cannot be Zero", newSquare.area());
+        }
+        catch (Exception e) {
+            String expectedMessage = "Side cannot be Zero";
 
             Assert.assertEquals(  expectedMessage, e.getMessage() );
         }

@@ -12,8 +12,10 @@ public class Square {
     public int area() throws IOException {
         if(sideLength>0){
             return sideLength*sideLength;
+        }else if(sideLength<0){
+            throw new IOException("Side cannot be negative");
         }else{
-            throw new IOException("Sides cannot be negative");
+            throw new IOException("Side cannot be Zero");
         }
 
 }
