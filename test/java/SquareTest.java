@@ -2,7 +2,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import Utility.Square;
 import org.testng.Assert;
-
 import java.io.IOException;
 
 public class SquareTest {

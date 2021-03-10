@@ -10,6 +10,7 @@ public class Square {
     }
 
     public int area() throws IOException {
+
         if(sideLength>0){
             return sideLength*sideLength;
         }else if(sideLength<0){
