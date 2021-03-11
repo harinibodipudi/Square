@@ -13,20 +13,16 @@ public class Square {
 
         if(sideLength>0){
             return sideLength*sideLength;
-        }else if(sideLength<0){
-            throw new IOException("Side cannot be negative");
         }else{
-            throw new IOException("Side cannot be Zero");
+            throw new IOException("Rectangle sides do not support negative and Zero Values");
         }
     }
 
     public int perimeter() throws IOException{
         if(sideLength>0){
             return sideLength*4;
-        }else if(sideLength<0){
-            throw new IOException("Side cannot be negative");
         }else{
-            throw new IOException("Side cannot be zero");
+            throw new IOException("Rectangle sides do not support negative and Zero Values");
         }
     }
 }

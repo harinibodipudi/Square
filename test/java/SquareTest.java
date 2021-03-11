@@ -19,10 +19,10 @@ public class SquareTest {
         Square newSquare = new Square(-4);
 
         try {
-            assertEquals("Side cannot be negative", newSquare.area());
+            assertEquals("Rectangle sides do not support negative and Zero Values", newSquare.area());
         }
         catch (Exception e) {
-            String expectedMessage = "Side cannot be negative";
+            String expectedMessage = "Rectangle sides do not support negative and Zero Values";
 
             Assert.assertEquals(  expectedMessage, e.getMessage() );
         }
@@ -33,10 +33,10 @@ public class SquareTest {
         Square newSquare = new Square(0);
 
         try {
-            assertEquals("Side cannot be Zero", newSquare.area());
+            assertEquals("Rectangle sides do not support negative and Zero Values", newSquare.area());
         }
         catch (Exception e) {
-            String expectedMessage = "Side cannot be Zero";
+            String expectedMessage = "Rectangle sides do not support negative and Zero Values";
 
             Assert.assertEquals(  expectedMessage, e.getMessage() );
         }
@@ -54,10 +54,10 @@ public class SquareTest {
         Square newSquare = new Square(-10);
 
         try {
-            assertEquals("Side cannot be negative", newSquare.perimeter());
+            assertEquals("Rectangle sides do not support negative and Zero Values", newSquare.perimeter());
         }
         catch (Exception e) {
-            String expectedMessage = "Side cannot be negative";
+            String expectedMessage = "Rectangle sides do not support negative and Zero Values";
 
             Assert.assertEquals(  expectedMessage, e.getMessage() );
         }
@@ -68,10 +68,10 @@ public class SquareTest {
         Square newSquare = new Square(0);
 
         try {
-            assertEquals("Side cannot be zero", newSquare.perimeter());
+            assertEquals("Rectangle sides do not support negative and Zero Values", newSquare.perimeter());
         }
         catch (Exception e) {
-            String expectedMessage = "Side cannot be zero";
+            String expectedMessage = "Rectangle sides do not support negative and Zero Values";
 
             Assert.assertEquals(  expectedMessage, e.getMessage() );
         }
